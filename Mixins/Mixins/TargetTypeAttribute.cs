@@ -10,8 +10,6 @@ namespace Mixins
 
         public TargetTypeAttribute(Type boundClass)
         {
-            if (boundClass != typeof (Document) && !boundClass.IsSubclassOf(typeof (Document)))
-                throw new ApplicationException("Bound class must be subclass of Document");
             BoundClass = boundClass;
         }
     }

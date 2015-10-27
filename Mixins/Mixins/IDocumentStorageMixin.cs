@@ -1,6 +1,6 @@
 namespace Mixins
 {
-    public interface IDocumentStorage
+    public interface IDocumentStorageMixin
     {
         void Store(Document doc);
     }
